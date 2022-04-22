@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/item_card_1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/card_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/image_frame"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_1"
+        app:layout_constraintBottom_toBottomOf="@+id/item_card_1"
+        app:layout_constraintStart_toStartOf="@+id/item_card_1"
+        app:layout_constraintTop_toTopOf="@+id/item_card_1" />
+
+    <ImageView
+        android:id="@+id/item_user_img1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_frame"
+        app:layout_constraintEnd_toEndOf="@+id/image_frame"
+        app:layout_constraintStart_toStartOf="@+id/image_frame"
+        app:layout_constraintTop_toTopOf="@+id/image_frame"
+        app:srcCompat="@drawable/ic_new_user" />
+
+    <TextView
+        android:id="@+id/item_one_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Salamon Brendli"
+        android:textColor="#686262"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image_frame"
+        app:layout_constraintTop_toTopOf="@+id/item_card_1" />
+
+    <TextView
+        android:id="@+id/item_one_user_detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text='git init git add README.md git commitm first commit" git branch'
+        app:layout_constraintBottom_toBottomOf="@+id/item_card_1"
+        app:layout_constraintEnd_toEndOf="@+id/item_card_1"
+        app:layout_constraintStart_toEndOf="@+id/image_frame"
+        app:layout_constraintTop_toBottomOf="@+id/item_one_username" />
+
+    <View
+        android:id="@+id/item_card_2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/card_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_card_1" />
+
+    <View
+        android:id="@+id/image_frame2"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_1"
+        app:layout_constraintBottom_toBottomOf="@+id/item_card_2"
+        app:layout_constraintStart_toStartOf="@+id/item_card_2"
+        app:layout_constraintTop_toTopOf="@+id/item_card_2" />
+
+    <ImageView
+        android:id="@+id/item_user_img2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_frame2"
+        app:layout_constraintEnd_toEndOf="@+id/image_frame2"
+        app:layout_constraintStart_toStartOf="@+id/image_frame2"
+        app:layout_constraintTop_toTopOf="@+id/image_frame2"
+        app:srcCompat="@drawable/ic_new_user2" />
+
+    <TextView
+        android:id="@+id/item_one_username2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Bariso Feyror"
+        android:textColor="#686262"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image_frame2"
+        app:layout_constraintTop_toTopOf="@+id/item_card_2" />
+
+    <TextView
+        android:id="@+id/item_one_user_detail2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text='Checkout other Man User Vectors with different styles in SVG vector library.'
+        app:layout_constraintBottom_toBottomOf="@+id/item_card_2"
+        app:layout_constraintEnd_toEndOf="@+id/item_card_2"
+        app:layout_constraintStart_toEndOf="@+id/image_frame2"
+        app:layout_constraintTop_toBottomOf="@+id/item_one_username2" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/card_1"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_card_2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/item_one_username5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Sayfulloni tog'asi"
+                android:textColor="#686262"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/image_frame3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/image_frame3"
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/item_user_image3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_frame3"
+                app:layout_constraintEnd_toEndOf="@+id/image_frame3"
+                app:layout_constraintStart_toStartOf="@+id/image_frame3"
+                app:layout_constraintTop_toTopOf="@+id/image_frame3"
+                app:srcCompat="@drawable/ic_new_user3" />
+
+            <TextView
+                android:id="@+id/item_one_user_detail5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:text='Checkout other Man User Vectors with different styles in SVG vector library.'
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_frame3"
+                app:layout_constraintTop_toBottomOf="@+id/item_one_username5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
